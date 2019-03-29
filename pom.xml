@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+         <modelVersion>4.0.0</modelVersion>
+
+         <groupId>com.shako</groupId>
+         <artifactId>dice</artifactId>
+         <version>dc-0.0.0.1</version>
+
+         <properties>
+         	<java.source.version>1.8</java.source.version>
+         	<java.target.version>1.8</java.target.version>
+
+
+         </properties>
+
+         <dependencyManagement>
+         	<dependencies>
+         		<!-- https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib -->
+         		<dependency>
+         			<groupId>org.jetbrains.kotlin</groupId>
+         			<artifactId>kotlin-stdlib</artifactId>
+         			<version>1.3.21</version>
+         		</dependency>
+         	</dependencies>
+         </dependencyManagement>
+</project>
