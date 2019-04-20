@@ -14,6 +14,10 @@
         <kotlin.stdlib.version>1.3.21</kotlin.stdlib.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <maven.compiler.plugin>3.8.0</maven.compiler.plugin>
+
+        <junit.jupiter.api.version>5.4.0</junit.jupiter.api.version>
+        <slf4j.api.version>1.7.25</slf4j.api.version>
+        <log4j-core.version>2.11.1</log4j-core.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -23,6 +27,25 @@
                 <artifactId>kotlin-stdlib</artifactId>
                 <version>${kotlin.maven.plugin.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.jupiter.api.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j-core.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.api.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -31,6 +54,18 @@
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib</artifactId>
             <version>${kotlin.stdlib.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
         </dependency>
     </dependencies>
 
