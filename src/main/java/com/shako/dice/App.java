@@ -1,3 +1,5 @@
+package com.shako.dice;
+
 public class App {
 
 	public static void main(String[] args) {
